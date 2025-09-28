@@ -1,109 +1,213 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <title> Задание 1 </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РђРґР°РїС‚РёРІРЅС‹Р№ СЃР°Р№С‚ СЃ СЃСЃС‹Р»РєР°РјРё, С‚Р°Р±Р»РёС†РµР№ Рё С„РѕСЂРјРѕР№</title>
+    <link rel="stylesheet" href="styles-mobile-first.css">
 </head>
-
 <body>
-    <p>
-        <a href="http://kubsu.ru/"> Oфициальный сайт КубГУ</a>
-    </p>
-    <p>
-        <a href="https://kubsu.ru/">Oфициальный сайт КубГУ (через протокол https)</a>
-    </p>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/50x50" alt="Р›РѕРіРѕС‚РёРї">
+                </div>
+                <h1 class="site-title">РќР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р°</h1>
+            </div>
+            <nav class="nav">
+                <a href="#link1" class="nav-link">РЎСЃС‹Р»РєР° РјРµРЅСЋ 1</a>
+                <a href="#link2" class="nav-link">РЎСЃС‹Р»РєР° 2</a>
+                <a href="#link3" class="nav-link">РЎСЃС‹Р»РєР° 3</a>
+            </nav>
+        </div>
+    </header>
 
-    <figure>
-        <a href="image.jpg"> <img src="image.jpg" alt="Цветок" style="width: 600px;"> </a>
-        <figcaption> Фотография цветка. Наведите курсор на картинку и кликните, чтобы изучить её детальнее</figcaption>
-    </figure>
-    <p>
-        <a href="https://www.kubsu.ru/ab">КубГУ</a>
-    </p>
-    <p>
-        <a href="https://kubsu.ru">КубГУ</a>
-    </p>
-    <p>
-        <a id="s1"> Фрагмент текущей страницы </a>
-        <br>
-        <a href="#s1"> Перейти к фрагменту</a>
-    </p>
-    <p>
-        <a href="https://www.kubsu.ru/ru/search/content">Поиск на сайте КубГУ</a>
-    </p>
-    <p>
-        <a href="https://www.kubsu.ru/ru/news/12345?id=67890">Смотреть новости</a>
-    </p>
+    <main class="main">
+        <div class="container">
+            <section class="section table-section">
+                <h2>РўР°Р±Р»РёС†Р°</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>РќР°РёРјРµРЅРѕРІР°РЅРёРµ</th>
+                            <th>РљР°С‚РµРіРѕСЂРёСЏ</th>
+                            <th>Р¦РµРЅР°</th>
+                            <th>РљРѕР»РёС‡РµСЃС‚РІРѕ</th>
+                            <th>РЎС‚Р°С‚СѓСЃ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>РќРѕСѓС‚Р±СѓРє ASUS</td>
+                            <td>Р­Р»РµРєС‚СЂРѕРЅРёРєР°</td>
+                            <td>50000 в‚Ѕ</td>
+                            <td>15</td>
+                            <td>Р’ РЅР°Р»РёС‡РёРё</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>РЎРјР°СЂС‚С„РѕРЅ Samsung</td>
+                            <td>Р­Р»РµРєС‚СЂРѕРЅРёРєР°</td>
+                            <td>25000 в‚Ѕ</td>
+                            <td>8</td>
+                            <td>Р’ РЅР°Р»РёС‡РёРё</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>РќР°СѓС€РЅРёРєРё Sony</td>
+                            <td rowspan="2">РђРєСЃРµСЃСЃСѓР°СЂС‹</td>
+                            <td>15000 в‚Ѕ</td>
+                            <td>0</td>
+                            <td>РќРµС‚ РІ РЅР°Р»РёС‡РёРё</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Р§РµС…РѕР» РґР»СЏ С‚РµР»РµС„РѕРЅР°</td>
+                            <td>1500 в‚Ѕ</td>
+                            <td>25</td>
+                            <td>Р’ РЅР°Р»РёС‡РёРё</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>РљР»Р°РІРёР°С‚СѓСЂР° Logitech</td>
+                            <td>РџРµСЂРёС„РµСЂРёСЏ</td>
+                            <td>4500 в‚Ѕ</td>
+                            <td>12</td>
+                            <td>Р’ РЅР°Р»РёС‡РёРё</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">РС‚РѕРіРѕ С‚РѕРІР°СЂРѕРІ:</td>
+                            <td>96000 в‚Ѕ</td>
+                            <td>60</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-    <p>
-        <a href="https://www.kubsu.ru/#:~:text=%D1%81%2009%3A00%20%D0%B4%D0%BE%2013%3A00%2C%20%D1%81%2013%3A30%20%D0%B4%D0%BE%2018%3A00"> Узнать часы работы приёмной комиссии КубГУ </a>
-    </p>
+            <section class="section links-section">
+                <h2>РњР°СЂРєРёСЂРѕРІР°РЅРЅС‹Р№ СЃРїРёСЃРѕРє РіРёРїРµСЂСЃСЃС‹Р»РѕРє</h2>
+                <ul class="links-list">
+                    <li><a href="http://kubsu.ru">РђР±СЃРѕР»СЋС‚РЅР°СЏ СЃСЃС‹Р»РєР° РЅР° kubsu.ru</a></li>
+                    <li><a href="https://kubsu.ru">РђР±СЃРѕР»СЋС‚РЅР°СЏ СЃСЃС‹Р»РєР° РЅР° kubsu.ru (https)</a></li>
+                    <li><a href="https://kubsu.ru"><img src="https://via.placeholder.com/100x50" alt="РЎСЃС‹Р»РєР°-РёР·РѕР±СЂР°Р¶РµРЅРёРµ"></a></li>
+                    <li><a href="/internal-page">РЎРѕРєСЂР°С‰РµРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° РІРЅСѓС‚СЂРµРЅРЅСЋСЋ СЃС‚СЂР°РЅРёС†Сѓ</a></li>
+                    <li><a href="/">РЎРѕРєСЂР°С‰РµРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° РіР»Р°РІРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ</a></li>
+                    <li><a href="#fragment">РЎСЃС‹Р»РєР° РЅР° С„СЂР°РіРјРµРЅС‚ С‚РµРєСѓС‰РµР№ СЃС‚СЂР°РЅРёС†С‹</a></li>
+                    <li><a href="/page?param1=value1&param2=value2&param3=value3">РЎСЃС‹Р»РєР° СЃ С‚СЂРµРјСЏ РїР°СЂР°РјРµС‚СЂР°РјРё</a></li>
+                    <li><a href="/page?id=123">РЎСЃС‹Р»РєР° СЃ РїР°СЂР°РјРµС‚СЂРѕРј id</a></li>
+                    <li><a href="current-page.html">РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РІ С‚РµРєСѓС‰РµРј РєР°С‚Р°Р»РѕРіРµ</a></li>
+                    <li><a href="about/page.html">РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РІ РєР°С‚Р°Р»РѕРіРµ about</a></li>
+                    <li><a href="../page.html">РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° СѓСЂРѕРІРЅРµРј РІС‹С€Рµ</a></li>
+                    <li><a href="../../page.html">РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РґРІСѓРјСЏ СѓСЂРѕРІРЅСЏРјРё РІС‹С€Рµ</a></li>
+                    <li>Р­С‚Рѕ <a href="/link">РєРѕРЅС‚РµРєСЃС‚РЅР°СЏ СЃСЃС‹Р»РєР°</a> РІ С‚РµРєСЃС‚Рµ Р°Р±Р·Р°С†Р°</li>
+                    <li><a href="https://example.com/page#section">РЎСЃС‹Р»РєР° РЅР° С„СЂР°РіРјРµРЅС‚ СЃС‚РѕСЂРѕРЅРЅРµРіРѕ СЃР°Р№С‚Р°</a></li>
+                    <li>
+                        <img src="https://via.placeholder.com/300x100" alt="РљР°СЂС‚Р°-РёР·РѕР±СЂР°Р¶РµРЅРёРµ" usemap="#image-map">
+                        <map name="image-map">
+                            <area shape="rect" coords="0,0,150,100" href="/rect-area" alt="РџСЂСЏРјРѕСѓРіРѕР»СЊРЅР°СЏ РѕР±Р»Р°СЃС‚СЊ">
+                            <area shape="circle" coords="225,50,25" href="/circle-area" alt="РљСЂСѓРіР»Р°СЏ РѕР±Р»Р°СЃС‚СЊ">
+                        </map>
+                    </li>
+                    <li><a href="">РЎСЃС‹Р»РєР° СЃ РїСѓСЃС‚С‹Рј href</a></li>
+                    <li><a>РЎСЃС‹Р»РєР° Р±РµР· href</a></li>
+                    <li><a href="/no-follow" rel="nofollow">РЎСЃС‹Р»РєР° СЃ Р·Р°РїСЂРµС‚РѕРј РїРµСЂРµС…РѕРґР° РґР»СЏ РїРѕРёСЃРєРѕРІРёРєРѕРІ</a></li>
+                    <li><a href="/no-index" rel="noindex">РЎСЃС‹Р»РєР°, Р·Р°РїСЂРµС‰РµРЅРЅР°СЏ РґР»СЏ РёРЅРґРµРєСЃР°С†РёРё</a></li>
+                    <li>
+                        <ol>
+                            <li><a href="/link1" title="РџРѕРґРїРёСЃСЊ Рє РїРµСЂРІРѕР№ СЃСЃС‹Р»РєРµ">РЎСЃС‹Р»РєР° 1</a></li>
+                            <li><a href="/link2" title="РџРѕРґРїРёСЃСЊ РєРѕ РІС‚РѕСЂРѕР№ СЃСЃС‹Р»РєРµ">РЎСЃС‹Р»РєР° 2</a></li>
+                            <li><a href="/link3" title="РџРѕРґРїРёСЃСЊ Рє С‚СЂРµС‚СЊРµР№ СЃСЃС‹Р»РєРµ">РЎСЃС‹Р»РєР° 3</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="ftp://user:password@ftp.example.com/file.txt">РЎСЃС‹Р»РєР° РЅР° FTP С„Р°Р№Р»</a></li>
+                </ul>
+            </section>
 
-    <p>
-        <a href="catalog.html">Каталог</a>
-    </p>
-    <p>
-        <a href="about/contacts.html">Контакты</a>
-    </p>
-    <!-- 11-12 сделаны для страницы сайта КубГУ https://www.kubsu.ru/ru/university/departments -->
-    <p>
-        <a href="../"> Ссылка на уровень выше </a>
-    </p>
+            <section class="section">
+                <h2 id="fragment">Р¤СЂР°РіРјРµРЅС‚ СЃС‚СЂР°РЅРёС†С‹</h2>
+                <p>Р­С‚Рѕ С†РµР»РµРІРѕР№ С„СЂР°РіРјРµРЅС‚ РґР»СЏ СЃСЃС‹Р»РєРё в„–6</p>
+            </section>
 
-    <p>
-        <a href="../../"> Ссылка на 2 уровня выше </a>
-    </p>
+            <section class="section form-section">
+                <h2>Р¤РѕСЂРјР°</h2>
+                <form action="/submit" method="post" class="form">
+                    <div class="form-group">
+                        <label for="fio">Р¤РРћ:</label>
+                        <input type="text" id="fio" name="fio" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">РўРµР»РµС„РѕРЅ:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate">Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <span class="label">РџРѕР»:</span>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="male" required> РњСѓР¶СЃРєРѕР№
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="female"> Р–РµРЅСЃРєРёР№
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="programming-languages">Р›СЋР±РёРјС‹Р№ СЏР·С‹Рє РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ:</label>
+                        <select id="programming-languages" name="languages" multiple size="6">
+                            <option value="pascal">Pascal</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="haskel">Haskel</option>
+                            <option value="clojure">Clojure</option>
+                            <option value="prolog">Prolog</option>
+                            <option value="scala">Scala</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bio">Р‘РёРѕРіСЂР°С„РёСЏ:</label>
+                        <textarea id="bio" name="bio" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agreement" required>
+                            РЎ РєРѕРЅС‚СЂР°РєС‚РѕРј РѕР·РЅР°РєРѕРјР»РµРЅ(Р°)
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">РЎРѕС…СЂР°РЅРёС‚СЊ</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
 
-    <p>
-        Для абитуриентов, желающих подать документы, на официальном сайте <a href="https://www.kubsu.ru/ru/abiturient">КубГУ создан специальный раздел</a>,
-        где можно найти всю необходимую информацию о сроках, правилах приема и необходимых экзаменах.
-    </p>
-    <p>
-        <img src="image.jpg" width="600" height="300" usemap="#map1" alt="Картинка">
-    </p>
-    <map name="map1">
-        <area shape="circle" coords="300, 130, 60" href="../result/circle-s.html" target="_blank"> Найдите круглую область в центре
-    </map>
-    <br>
-    <p>
-        <img src="image.jpg" width="600" height="300" usemap="#map1" alt="Картинка">
-    </p>
-    <map name="map1">
-        <area shape="rectangle" coords="300, 130, 60" href="../result/circle-s.html" target="_blank"> Найдите прямоугольную область в центре
-    </map>
-
-    <p>
-        <a href="##"> Каталог1 (в разработке)</a>
-    </p>
-
-    <p>
-        <a> Каталог2 (в разработке)</a>
-    </p>
-
-    <p>
-        <form action="http://kubsu.ru/" method="get" target="_blank">
-            <button type="submit" class="link-button"> Посетить сайт КубГУ</button>
-        </form>
-    </p>
-
-    <p>
-        <a href="https://example.com/" rel="nofollow"> Запретная ссылка </a>
-    </p>
-
-    <p>
-        <noindex>часть страницы</noindex>
-    </p>
-
-    <h2> Нумерованный список </h2>
-    <ol>
-        <li> Title1 </li>
-        <li> Title2 </li>
-        <li> Title3 </li>
-    </ol>
-
-    <p>
-        <a href="ftp://s0195823:pass456@ftp.myserver.com/1/reg.txt"> Скачать файл с формой регистрации</a>
-    </p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; РЎРµСЂРіРµР№ РЎРёРЅРёС†Р°</p>
+        </div>
+    </footer>
 </body>
-
 </html>
