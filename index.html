@@ -26,6 +26,53 @@
 <main class="main">
 <div class="container">
 <!-- Таблица - на мобильных ПЕРВАЯ, на десктопе на своем месте -->
+
+
+<!-- Список ссылок - на мобильных ВТОРОЙ -->
+<section class="section links-section">
+<h2>Маркированный список гиперссылок</h2>
+<ul class="links-list">
+<li><a href="http://kubsu.ru">Абсолютная ссылка на kubsu.ru</a></li>
+<li><a href="https://kubsu.ru">Абсолютная ссылка на kubsu.ru (https)</a></li>
+<li><a href="https://kubsu.ru"><img src="https://via.placeholder.com/100x50" alt="Ссылка-изображение"></a></li>
+<li><a href="/internal-page">Сокращенная ссылка на внутреннюю страницу</a></li>
+<li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+<li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+<li><a href="/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
+<li><a href="/page?id=123">Ссылка с параметром id</a></li>
+<li><a href="current-page.html">Относительная ссылка в текущем каталоге</a></li>
+<li><a href="about/page.html">Относительная ссылка в каталоге about</a></li>
+<li><a href="../page.html">Относительная ссылка уровнем выше</a></li>
+<li><a href="../../page.html">Относительная ссылка двумя уровнями выше</a></li>
+<li>Это <a href="/link">контекстная ссылка</a> в тексте абзаца</li>
+<li><a href="https://example.com/page#section">Ссылка на фрагмент стороннего сайта</a></li>
+<li>
+<img src="https://via.placeholder.com/300x100" alt="Карта-изображение" usemap="#image-map">
+<map name="image-map">
+<area shape="rect" coords="0,0,150,100" href="/rect-area" alt="Прямоугольная область">
+<area shape="circle" coords="225,50,25" href="/circle-area" alt="Круглая область">
+</map>
+</li>
+<li><a href="">Ссылка с пустым href</a></li>
+<li><a>Ссылка без href</a></li>
+<li><a href="/no-follow" rel="nofollow">Ссылка с запретом перехода для поисковикам</a></li>
+<li><a href="/no-index" rel="noindex">Ссылка, запрещенная для индексации</a></li>
+<li>
+<ol>
+<li><a href="/link1" title="Подпись к первой ссылке">Ссылка 1</a></li>
+<li><a href="/link2" title="Подпись ко второй ссылке">Ссылка 2</a></li>
+<li><a href="/link3" title="Подпись к третьей ссылке">Ссылка 3</a></li>
+</ol>
+</li>
+<li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+</ul>
+</section>
+
+<section class="section">
+<h2 id="fragment">Фрагмент страницы</h2>
+<p>Это целевой фрагмент для ссылки №6</p>
+</section>
+
 <section class="section table-section mobile-first">
 <h2>Таблица</h2>
 <table class="data-table">
@@ -87,51 +134,6 @@
 </tr>
 </tbody>
 </table>
-</section>
-
-<!-- Список ссылок - на мобильных ВТОРОЙ -->
-<section class="section links-section">
-<h2>Маркированный список гиперссылок</h2>
-<ul class="links-list">
-<li><a href="http://kubsu.ru">Абсолютная ссылка на kubsu.ru</a></li>
-<li><a href="https://kubsu.ru">Абсолютная ссылка на kubsu.ru (https)</a></li>
-<li><a href="https://kubsu.ru"><img src="https://via.placeholder.com/100x50" alt="Ссылка-изображение"></a></li>
-<li><a href="/internal-page">Сокращенная ссылка на внутреннюю страницу</a></li>
-<li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-<li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-<li><a href="/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
-<li><a href="/page?id=123">Ссылка с параметром id</a></li>
-<li><a href="current-page.html">Относительная ссылка в текущем каталоге</a></li>
-<li><a href="about/page.html">Относительная ссылка в каталоге about</a></li>
-<li><a href="../page.html">Относительная ссылка уровнем выше</a></li>
-<li><a href="../../page.html">Относительная ссылка двумя уровнями выше</a></li>
-<li>Это <a href="/link">контекстная ссылка</a> в тексте абзаца</li>
-<li><a href="https://example.com/page#section">Ссылка на фрагмент стороннего сайта</a></li>
-<li>
-<img src="https://via.placeholder.com/300x100" alt="Карта-изображение" usemap="#image-map">
-<map name="image-map">
-<area shape="rect" coords="0,0,150,100" href="/rect-area" alt="Прямоугольная область">
-<area shape="circle" coords="225,50,25" href="/circle-area" alt="Круглая область">
-</map>
-</li>
-<li><a href="">Ссылка с пустым href</a></li>
-<li><a>Ссылка без href</a></li>
-<li><a href="/no-follow" rel="nofollow">Ссылка с запретом перехода для поисковикам</a></li>
-<li><a href="/no-index" rel="noindex">Ссылка, запрещенная для индексации</a></li>
-<li>
-<ol>
-<li><a href="/link1" title="Подпись к первой ссылке">Ссылка 1</a></li>
-<li><a href="/link2" title="Подпись ко второй ссылке">Ссылка 2</a></li>
-<li><a href="/link3" title="Подпись к третьей ссылке">Ссылка 3</a></li>
-</ol>
-</li>
-<li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
-</ul>
-</section>
-
-<section class="section">
-<h2 id="fragment">Фрагмент страницы</h2>
-<p>Это целевой фрагмент для ссылки №6</p>
 </section>
 
 <section class="section form-section">
